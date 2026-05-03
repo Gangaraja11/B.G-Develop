@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Services</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<nav>
+   <h2 class="brand">
+    B.G Development <i class="fas fa-code"></i>
+    <span class="brand-subtitle">Web & App Development</span>
+    </h2>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i id="menuIcon" class="fas fa-bars"></i>
+    </div>
+
+    <ul id="menu">
+        <li onclick="showSection('home')">Home</li>
+        <li onclick="showSection('about')">About</li>
+        <li onclick="showSection('plans')">Plans</li>
+        <li onclick="showSection('work')">My Work</li>
+        <li onclick="showSection('why')">Why Me</li>
+        <li onclick="showSection('process')">Process</li>
+        <li onclick="showSection('contact')">Contact</li>
+    </ul>
+</nav>
+
+    <!-- HOME -->
+<section id="home" class="active">
+
+    <!-- VIDEO SHOWCASE BOX -->
+    <div class="video-box">
+
+        <div class="laptop-frame">
+            <div class="video-slider" id="videoSlider">
+                <video src="web.mp4" class="video active" muted autoplay playsinline></video>
+                <video src="app.mp4" class="video" muted playsinline></video>
+                <video src="seo.mp4" class="video" muted playsinline></video>
+            </div>
+        </div>
+
+        <!-- DOTS -->
+    <div class="video-dots" id="videoDots"></div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="home-content">
+
+    <!-- TRUST BADGE -->
+    <div class="trust-badge">
+        ⭐ Trusted by small businesses
+    </div>
+
+    <h1>
+        <span id="typing"><br><br></span>
+    </h1>
+
+    <p class="subtitle">
+
+        I create modern, high-converting websites that help your business get more customers online.
+    </p>
+
+    <!-- STATS -->
+    <div class="home-stats">
+        <div><strong>20+</strong><span>Projects</span></div>
+        <div><strong>3–5 Days</strong><span>Delivery</span></div>
+        <div><strong>100%</strong><span>Mobile Ready</span></div>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="cta-group">
+        <button onclick="showSection('plans')">View Plans</button>
+        <a href="https://wa.me/919035597891" target="_blank" class="cta-secondary">
+            Chat on WhatsApp
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+    <h1>About My Services</h1>
+
+    <div class="about-stats">
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="20" data-suffix="+">0</h2>
+            <p>Projects Completed</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="5" data-prefix="3–">0</h2>
+            <p>Days Delivery</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="100" data-suffix="%">0</h2>
+            <p>Mobile Ready</p>
+        </div>
+
+    </div>
+
+    <div class="about-container">
+
+        <!-- LEFT SIDE -->
+        <div class="about-text">
+            <h2>I help businesses grow online 🚀</h2>
+
+            <p>
+                I specialize in building modern, fast, and mobile-friendly websites 
+                for small businesses. My goal is simple — help you attract more customers 
+                and grow your business online.
+            </p>
+
+            <p>
+                From simple landing pages to advanced business websites, I deliver 
+                clean designs, smooth performance, and professional results.
+            </p>
+
+            <button onclick="showSection('contact')">Get Your Website</button>
+        </div>
+
+        <!-- RIGHT SIDE (FEATURE CARDS) -->
+        <div class="about-features">
+
+            <div class="about-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Modern Design</h3>
+                <p>Clean and attractive UI that builds trust.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Performance</h3>
+                <p>Optimized for speed and smooth experience.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Fully Responsive</h3>
+                <p>Perfect on mobile, tablet, and desktop.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-headset"></i>
+                <h3>Support</h3>
+                <p>Easy communication and quick updates.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- PLANS -->
+    <section id="plans">
+    <h1>Plans & Pricing</h1>
+
+    <div class="plans-container">
+
+        <!-- BASIC -->
+        <div class="plan-card">
+            <h2>Basic</h2>
+            <h3>₹3000</h3>
+            <ul>
+                <li>✔ 1–3 Pages</li>
+                <li>✔ Mobile Friendly</li>
+                <li>✔ Fast Loading</li>
+                <li>✔ Delivery: 3 Days</li>
+            </ul>
+            <button onclick="showSection('contact')">Get Started</button>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="plan-card popular">
+            <span class="badge">Most Popular</span>
+            <h2>Standard</h2>
+            <h3>₹7000</h3>
+            <ul>
+                <li>✔ Up to 5 Pages</li>
+                <li>✔ Contact Form</li>
+                <li>✔ Basic SEO</li>
+                <li>✔ Faster Delivery</li>
+            </ul>
+            <button onclick="showSection('contact')">Get Started</button>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="plan-card">
+            <h2>Premium</h2>
+            <h3>₹12000+</h3>
+            <ul>
+                <li>✔ Custom Design</li>
+                <li>✔ Animations</li>
+                <li>✔ Advanced Features</li>
+                <li>✔ Full Support</li>
+            </ul>
+            <button onclick="showSection('contact')">Get Started</button>
+        </div>
+
+    </div>
+</section>
+
+    <!-- WORK -->
+    <section id="work">
+    <h1>My Work <br> <span class="brand-subtitle">Click On Images</span></h1>
+
+    <div class="work-container">
+
+        <!-- Project 1 -->
+        <div class="work-card">
+            <img src="backery.jpeg" alt="Bakery Website">
+
+            <div class="work-overlay">
+                <h3>Bakery Website</h3>
+                <p>Designed to attract local customers and increase walk-ins.</p>
+                <a href="https://wa.me/919035597891" target="_blank">Request Similar</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="work-card">
+            <img src="gym.jpeg" alt="Gym Website">
+
+            <div class="work-overlay">
+                <h3>Gym Website</h3>
+                <p>Modern design with membership features.</p>
+                <a href="https://wa.me/919035597891" target="_blank">Request Similar</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="work-card">
+            <img src="salon.jpeg" alt="Salon Website">
+
+            <div class="work-overlay">
+                <h3>Salon Website</h3>
+                <p>Simple and clean design for bookings.</p>
+                <a href="https://wa.me/919035597891" target="_blank">Request Similar</a>
+            </div>
+        </div>
+
+        <!-- Project 4 (REAL) -->
+        <div class="work-card">
+            <img src="restoraunt.jpeg" alt="Restaurant Review Analyzer">
+
+            <div class="work-overlay">
+                <h3>Restaurant Review Analyzer</h3>
+                <p>AI-based sentiment analysis on restaurant reviews.</p>
+                <a href="https://gangaraja11.github.io/Updated-restaurant-review-analyzer/" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 5 (REAL) -->
+        <div class="work-card">
+            <img src="contrsuction.jpeg" alt="Construction Website">
+
+            <div class="work-overlay">
+                <h3>Construction Services Website</h3>
+                <p>Professional website for civil construction business.</p>
+                <a href="https://gangaraja11.github.io/Civil-ConstructionWebsite/" target="_blank">View Project</a>
+            </div>
+        </div>
+ 
+    </div>
+</section>
+
+    <!-- WHY -->
+    <section id="why">
+    <h1>Why Choose Me</h1>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <i class="fas fa-wallet"></i>
+            <h3>Affordable Pricing</h3>
+            <p>Perfect for small businesses starting online.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-bolt"></i>
+            <h3>Fast Delivery</h3>
+            <p>Your website is ready in 2–5 days.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile Friendly</h3>
+            <p>Fully responsive on all devices.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-comments"></i>
+            <h3>Easy Communication</h3>
+            <p>Direct WhatsApp support anytime.</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- PROCESS -->
+    <section id="process">
+    <h1>How It Works</h1>
+
+    <div class="process-container">
+
+        <div class="process-step">
+            <div class="circle">1</div>
+            <div class="content">
+                <h3>You Contact Me</h3>
+                <p>Share your idea via WhatsApp or contact form.</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="circle">2</div>
+            <div class="content">
+                <h3>I Design Your Website</h3>
+                <p>I create a modern and responsive design for you.</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="circle">3</div>
+            <div class="content">
+                <h3>You Approve</h3>
+                <p>You review and suggest changes if needed.</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="circle">4</div>
+            <div class="content">
+                <h3>I Deliver</h3>
+                <p>Your website goes live and ready for customers.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- CONTACT -->
+<section id="contact">
+    <h1>Get a Free Quote</h1>
+
+    <p class="contact-subtitle">
+        Tell me about your project — I’ll reply on WhatsApp with details & pricing.
+    </p>
+
+    <div class="quote-form">
+
+        <input type="text" id="name" placeholder="Your Name">
+
+        <select id="type">
+            <option value="Business Website">Business Website</option>
+            <option value="Portfolio Website">Portfolio Website</option>
+            <option value="E-commerce Website">E-commerce Website</option>
+            <option value="Landing Page">Landing Page</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- hidden by default -->
+        <input type="text" id="otherType" placeholder="Specify website type" style="display:none;">
+
+        <select id="budget">
+            <option value="₹3000 - ₹5000">₹3000 - ₹5000</option>
+            <option value="₹5000 - ₹10000">₹5000 - ₹10000</option>
+            <option value="₹10000+">₹10000+</option>
+        </select>
+
+        <textarea id="message" placeholder="Describe your project..."></textarea>
+
+        <button onclick="sendWhatsApp()">Send on WhatsApp</button>
+
+    </div>
+
+    <!-- QUICK CONTACT ICONS -->
+<div class="quick-icons" id="quickIcons">
+
+    <a href="https://instagram.com/ganga_raj_12" target="_blank" class="q-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="mailto:gangrajb8@gmail.com" class="q-icon">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="https://wa.me/919035597891" target="_blank" class="q-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://facebook.com/ganga_raj_12" target="_blank" class="q-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+</div>
+</section>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- FLOATING CONTACT BUTTONS -->
+<div class="floating-icons">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919035597891?text=Hello%20%F0%9F%91%8B%20I%20came%20through%20your%20website.%20I%20want%20to%20create%20a%20website%20for%20my%20business.%20Please%20share%20pricing%20and%20details." 
+       class="icon whatsapp" 
+       target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+919035597891" class="icon phone">
+        <i class="fas fa-phone"></i>
+    </a>
+
+</div>
+
+<!-- BACK TO HOME BUTTON -->
+ <div id="backHome" onclick="goHome()">
+    <i class="fas fa-arrow-left"></i>
+</div>
+
+<div id="exitToast">Press again to exit</div>
+
+</body>
+</html>
