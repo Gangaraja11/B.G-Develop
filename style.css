@@ -221,17 +221,18 @@ nav ul {
     backdrop-filter: blur(12px);
 }
 
-/* MENU ITEM ANIMATION */
-nav ul li {
-    opacity: 0;
-    transform: translateX(30px);
-    transition: all 0.3s ease;
-}
+/* APPLY ANIMATION ONLY ON MOBILE */
+@media (max-width: 768px) {
+    nav ul li {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all 0.3s ease;
+    }
 
-/* WHEN MENU OPEN */
-nav ul.active li {
-    opacity: 1;
-    transform: translateX(0);
+    nav ul.active li {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* STAGGER EFFECT */
